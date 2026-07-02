@@ -81,7 +81,7 @@ profile 0
         set tpa_rate = 60
     #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Ultra PIDs — Aggressive, racing/freestyle
+    #$ OPTION BEGIN (UNCHECKED): Ultra PIDs — Aggressive, requires a clean/low-noise build, and disables Airmode by default
         feature -AIRMODE
         set acc_hardware = NONE
         set dterm_lpf1_dyn_min_hz = 85
