@@ -12,7 +12,7 @@
 #
 # Two PID tune options:
 # - Standard: Smooth, stable, suitable for most pilots
-# - Ultra: Aggressive, racing/freestyle (disables accelerometer/AIRMODE)
+# - Ultra: 激进，对于飞机噪声有较高的要求，并且默认关闭Airmode
 
 # ---- Common Settings ----
 
