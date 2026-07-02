@@ -79,6 +79,7 @@ profile 0
         set d_max_roll = 32
         set d_max_pitch = 34
         set tpa_rate = 60
+        set small_angle = 180
     #$ OPTION END
 
     #$ OPTION BEGIN (UNCHECKED): Ultra PIDs — Aggressive, requires a clean/low-noise build, and disables Airmode by default
@@ -104,5 +105,6 @@ profile 0
         set d_max_roll = 36
         set d_max_pitch = 37
         set tpa_rate = 70
+        set small_angle = 180
     #$ OPTION END
 #$ OPTION_GROUP END

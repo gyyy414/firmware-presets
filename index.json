@@ -644,7 +644,7 @@
   "presets": [
     {
       "fullPath": "presets/2025.12/bnf/oxbt_champ2_factory.txt",
-      "hash": "983ec85073e21bd4b211723017c7eee87bf1004937702818f79769a14ba8fac8",
+      "hash": "2d3107d9c3a7a105023c082d8eb57814102494a5d955006410cde26de7b7f8d5",
       "title": "OXBT CHAMP2 Factory Preset",
       "firmware_version": [
         "2025.12"
