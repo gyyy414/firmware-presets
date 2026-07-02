@@ -2,16 +2,17 @@
 #$ FIRMWARE_VERSION: 2025.12
 #$ CATEGORY: BNF
 #$ STATUS: COMMUNITY
-#$ DISCUSSION: <PR URL — update after creating PR>
-#$ PARSER: MARKED
+#$ KEYWORDS: oxbt, champ2, champ, bnf, factory, pid, tune
+#$ AUTHOR: OXBT
+#$ DESCRIPTION: Factory preset for the OXBT CHAMP2 flight controller.
+#$ DESCRIPTION: Two PID tune options: Standard (smooth, all-round) and Ultra (aggressive, racing).
+#$ DISCUSSION: https://github.com/gyyy414/firmware-presets
 
 # OXBT CHAMP2 Factory Preset
 #
-# This preset provides two PID tune options for the OXBT CHAMP2:
-# - **Standard**: Smooth, stable tune suitable for most pilots
-# - **Ultra**: Aggressive tune for experienced pilots (turns off accelerometer, disables AIRMODE)
-#
-# Pick the option that matches your flying style below.
+# Two PID tune options:
+# - Standard: Smooth, stable, suitable for most pilots
+# - Ultra: Aggressive, racing/freestyle (disables accelerometer/AIRMODE)
 
 # ---- Common Settings ----
 
@@ -24,7 +25,7 @@ feature OSD
 set mag_hardware = NONE
 set baro_hardware = NONE
 
-# Gyro Filters (dual-gyro compatible)
+# Gyro Filters
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
 set dyn_notch_count = 2
@@ -57,51 +58,51 @@ set tpa_breakpoint = 1300
 profile 0
 
 #$ OPTION_GROUP BEGIN: PID Tune Selection
-#$ OPTION BEGIN (CHECKED): Standard PIDs — Smooth, stable, all-round flight
-set dterm_lpf1_dyn_min_hz = 65
-set dterm_lpf1_dyn_max_hz = 135
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 130
-set anti_gravity_gain = 60
-set throttle_boost = 0
-set p_pitch = 32
-set i_pitch = 115
-set d_pitch = 25
-set f_pitch = 105
-set p_roll = 33
-set i_roll = 112
-set d_roll = 24
-set f_roll = 110
-set p_yaw = 34
-set i_yaw = 110
-set f_yaw = 105
-set d_max_roll = 32
-set d_max_pitch = 34
-set tpa_rate = 60
-#$ OPTION END
+    #$ OPTION BEGIN (CHECKED): Standard PIDs — Smooth, stable, all-round flight
+        set dterm_lpf1_dyn_min_hz = 65
+        set dterm_lpf1_dyn_max_hz = 135
+        set dterm_lpf1_static_hz = 0
+        set dterm_lpf2_static_hz = 130
+        set anti_gravity_gain = 60
+        set throttle_boost = 0
+        set p_pitch = 32
+        set i_pitch = 115
+        set d_pitch = 25
+        set f_pitch = 105
+        set p_roll = 33
+        set i_roll = 112
+        set d_roll = 24
+        set f_roll = 110
+        set p_yaw = 34
+        set i_yaw = 110
+        set f_yaw = 105
+        set d_max_roll = 32
+        set d_max_pitch = 34
+        set tpa_rate = 60
+    #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Ultra PIDs — Aggressive, racing/freestyle (disables accelerometer, disables AIRMODE)
-feature -AIRMODE
-set acc_hardware = NONE
-set dterm_lpf1_dyn_min_hz = 85
-set dterm_lpf1_dyn_max_hz = 185
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 185
-set anti_gravity_gain = 55
-set throttle_boost = 8
-set p_pitch = 42
-set i_pitch = 115
-set d_pitch = 28
-set f_pitch = 105
-set p_roll = 43
-set i_roll = 112
-set d_roll = 27
-set f_roll = 130
-set p_yaw = 40
-set i_yaw = 110
-set f_yaw = 125
-set d_max_roll = 36
-set d_max_pitch = 37
-set tpa_rate = 70
-#$ OPTION END
+    #$ OPTION BEGIN (UNCHECKED): Ultra PIDs — Aggressive, racing/freestyle
+        feature -AIRMODE
+        set acc_hardware = NONE
+        set dterm_lpf1_dyn_min_hz = 85
+        set dterm_lpf1_dyn_max_hz = 185
+        set dterm_lpf1_static_hz = 0
+        set dterm_lpf2_static_hz = 185
+        set anti_gravity_gain = 55
+        set throttle_boost = 8
+        set p_pitch = 42
+        set i_pitch = 115
+        set d_pitch = 28
+        set f_pitch = 105
+        set p_roll = 43
+        set i_roll = 112
+        set d_roll = 27
+        set f_roll = 130
+        set p_yaw = 40
+        set i_yaw = 110
+        set f_yaw = 125
+        set d_max_roll = 36
+        set d_max_pitch = 37
+        set tpa_rate = 70
+    #$ OPTION END
 #$ OPTION_GROUP END

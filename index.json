@@ -198,6 +198,7 @@
       "Neil Marek (Grower)",
       "NemesisXB",
       "Nicholas Young (Fader FPV)",
+      "OXBT",
       "QuadMcFly (Ryan Harrell)",
       "Safeer Hussain",
       "Sartor",
@@ -330,6 +331,8 @@
       "camera",
       "camera_control",
       "Cgo",
+      "champ",
+      "champ2",
       "Chief",
       "chris",
       "cine",
@@ -490,6 +493,7 @@
       "openracer",
       "OpenVTx",
       "OSD",
+      "oxbt",
       "ozr",
       "panda",
       "pandarc",
@@ -640,13 +644,23 @@
   "presets": [
     {
       "fullPath": "presets/2025.12/bnf/oxbt_champ2_factory.txt",
-      "hash": "3fba9dee301932e01fa8f8d3296ea31a2599035ddb09c9231bfa7b6b30eb0749",
+      "hash": "8ffcd464022a8666370de742b258f326dee4d36c87118c78332f49f8c48e3221",
       "title": "OXBT CHAMP2 Factory Preset",
       "firmware_version": [
         "2025.12"
       ],
       "category": "BNF",
       "status": "COMMUNITY",
+      "keywords": [
+        "oxbt",
+        "champ2",
+        "champ",
+        "bnf",
+        "factory",
+        "pid",
+        "tune"
+      ],
+      "author": "OXBT",
       "priority": 0
     },
     {
