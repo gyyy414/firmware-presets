@@ -93,7 +93,7 @@ profile 0
         set p_pitch = 42
         set i_pitch = 115
         set d_pitch = 28
-        set f_pitch = 105
+        set f_pitch = 125
         set p_roll = 43
         set i_roll = 112
         set d_roll = 27
