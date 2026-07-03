@@ -1,11 +1,12 @@
 #$ TITLE: OXBT CHAMP2 Factory Preset
 #$ FIRMWARE_VERSION: 2025.12
-#$ CATEGORY: BNF
+#$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
-#$ KEYWORDS: oxbt, champ2, champ, bnf, factory, pid, tune
-#$ AUTHOR: OXBT
+#$ KEYWORDS: oxbt, champ2, champ, factory, pid, tune
+#$ AUTHOR: Michael-Oxbot
 #$ DESCRIPTION: Factory preset for the OXBT CHAMP2 flight controller.
-#$ DESCRIPTION: Two PID tune options: Standard (smooth, all-round) and Ultra (aggressive, racing).
+#$ DESCRIPTION: Two PID tune options: Standard (smooth, stable, all-round) and Ultra (aggressive, racing, disables accelerometer and Airmode).
+#$ DESCRIPTION: Standard is the default and recommended for most pilots.
 #$ DISCUSSION: https://github.com/gyyy414/firmware-presets
 
 # OXBT CHAMP2 Factory Preset
@@ -57,7 +58,7 @@ set tpa_breakpoint = 1300
 
 profile 0
 
-#$ OPTION_GROUP BEGIN: PID Tune Selection
+#$ OPTION_GROUP BEGIN: (EXCLUSIVE) PID Tune Selection
     #$ OPTION BEGIN (CHECKED): Standard PIDs — Smooth, stable, all-round flight
         set dterm_lpf1_dyn_min_hz = 65
         set dterm_lpf1_dyn_max_hz = 135
