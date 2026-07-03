@@ -3,7 +3,7 @@
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: oxbt, champ2, champ, factory, pid, tune
-#$ AUTHOR: Michael-Oxbot
+#$ AUTHOR: Michael-GGG
 #$ DESCRIPTION: Factory preset for the OXBT CHAMP2 flight controller.
 #$ DESCRIPTION: Two PID tune options: Standard (smooth, stable, all-round) and Ultra (aggressive, racing, disables accelerometer and Airmode).
 #$ DESCRIPTION: Standard is the default and recommended for most pilots.
