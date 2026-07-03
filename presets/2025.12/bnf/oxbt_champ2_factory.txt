@@ -7,6 +7,20 @@
 #$ DESCRIPTION: Factory preset for the OXBT CHAMP2 flight controller.
 #$ DESCRIPTION: Two PID tune options: Standard (smooth, stable, all-round) and Ultra (aggressive, racing, disables accelerometer and Airmode).
 #$ DESCRIPTION: Standard is the default and recommended for most pilots.
+#$ DESCRIPTION:
+#$ DESCRIPTION: RPM filtering (Bidirectional DSHOT) is REQUIRED for this tune.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended setup for Ultra:
+#$ DESCRIPTION: - Motor KV: 2150-2200
+#$ DESCRIPTION: - Props: GF5129, HQProp R29, HQProp R28 MCK, or other low-pitch props
+#$ DESCRIPTION: - Battery: 1500mAh or lighter, any brand/C-rating, to unlock Ultra's full potential
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended setup for Standard:
+#$ DESCRIPTION: - Motor KV: 1950-2020
+#$ DESCRIPTION: - Props: GF5129, GF51377, GF51466, or other medium-pitch props
+#$ DESCRIPTION: - Battery: 1480mAh-1550mAh, any brand/C-rating
+#$ DESCRIPTION:
+#$ DESCRIPTION: These are recommendations only. Every pilot has their own preferences — feel free to experiment.
 #$ DISCUSSION: https://github.com/gyyy414/firmware-presets
 
 # OXBT CHAMP2 Factory Preset
@@ -34,10 +48,6 @@ set dyn_notch_q = 550
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 550
 set simplified_gyro_filter_multiplier = 110
-
-# RC Smoothing
-set rc_smoothing_auto_factor = 25
-set rc_smoothing_auto_factor_throttle = 25
 
 # Blackbox
 set blackbox_sample_rate = 1/8
